@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta property="og:title" content="AK VTC">
+    <meta property="og:description" content="AK VTC offre un service de transport privé à Brest et sur l'ensemble du territoire national. Disponible 24/7, nous garantissons des transferts vers les gares, aéroports et ports avec confort, ponctualité et un service sur mesure.">
+    <meta property="og:image" content="https://www.ak-vtc.com/img/ak-logo.png">
+    <meta property="og:url" content="https://www.ak-vtc.com/">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>AK VTC</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader-bg"></div>
+    <div id="preloader">
+        <div id="preloader-status">
+            <div class="preloader-position loader"> <span></span> </div>
+        </div>
+    </div>
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+                 <img src="img/ak-logo.png" class="logo-img" alt="AK VTC"> 
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cars">Voitures</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reservation">Réservation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>  
+                </ul>
+                <div class="navbar-right">
+                    <div class="wrap">
+                        <div class="icon"> <i class="flaticon-phone-call"></i> </div>
+                        <div class="text">
+                            <p>Besoin d'aide ?</p>
+                            <h5><a href="tel:33 6 20 96 98 61">+33 6 20 96 98 61</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Slider -->
+    <header id="home" class="header slider-fade">
+        <div class="owl-carousel owl-theme">
+            <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/slider/11.webp" >
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-30">
+                                <div class="v-middle">
+                                    <h6>* Premium</h6>
+                                    <h1>Chauffeur privé</h1>
+                                    <h5>Mercedes Classe V <span>7 <i> Places </i></span></h5>
+                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15 ">Appeler <span class="flaticon-phone-call"></span></a>
+                                    <a href="#reservation" class="button-2 mt-15 mb-15">Réserver maintenant <span class="ti-arrow-top-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item bg-img" data-overlay-dark="5" data-background="img/slider/120.jpg">
+                <div class="v-middle caption">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 mb-30">
+                                <div class="v-middle">
+                                    <h6>* Économique</h6>
+                                    <h1>Chauffeur privé</h1>
+                                    <h5>Skoda Enyaq électrique <span>4 <i> Places</i></span></h5>
+                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15 ">Appeler <span class="flaticon-phone-call"></span></a>
+                                    <a href="#" data-scroll-nav="1" class="button-2 mt-15 mb-15">Réserver maintenant <span class="ti-arrow-top-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- About -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-30">
+                    <div class="content">
+                        <div class="section-subtitle">AK VTC</div>
+                        <div class="section-title">Nous sommes plus qu'un  <span>chauffeur privé </span></div>
+                        <p class="mb-15" style="text-align: justify;">
+                            AK VTC propose un service de transport de personnes à Brest et sur l'ensemble du territoire national, garantissant une solution de transport pratique et compétitive. 
+                            Disponible 24h/24 et 7j/7, nous assurons tous types de transferts, notamment vers les gares, les aéroports et les ports, en vous offrant tranquillité, confort et ponctualité. 
+                            Notre service sur mesure, alliant qualité et prestations haut de gamme, répond à vos besoins les plus exigeants pour chaque déplacement.
+                        </p>
+                        <ul class="list-unstyled list mb-30">
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest - Landerneau.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest - Plougastel-Daoulas.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text"><p>Transfert gare SNCF Brest - Morlaix.</p> </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text"><p> Transfert gare SNCF  Brest - Saint Renan</p> </div>
+                            </li>
+                            <div class="readMore" style="display: none">
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text"><p>Transfert gare SNCF Brest - Lannilis.</p> </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text"><p>Transfert gare SNCF Brest - Guilers.</p> </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text"><p>Transfert gare SNCF Brest - Plouzane.</p> </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest - Loperhet.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text" >
+                                    <p >Transfert gare SNCF Brest - Le conquet.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest - Le Relecq-Kerhuon.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest - Chateaulin.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Brest -  Logonna-daoulas.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert gare SNCF Guipavas - Le conquet.</p>
+                                </div>
+                            </li>
+                            <li> 
+                                      <div class="list-icon"> <span class="ti-check"></span> </div>
+                                      <div class="list-text"><p>Transfert aéroport Brest - Guipavas - Carhaix.</p> </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert aéroport  Brest - Guipavas - Quimper.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert aéroport  Brest -  Guipavas - Saint-Brieuc.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert aéroport Brest - Guipavas - Carnac.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert aéroport  Brest - Guipavas - Le conquet.</p>
+                                </div>
+                            </li>
+                            <li >
+                                <div class="list-icon"> <span class="ti-check"></span> </div>
+                                <div class="list-text">
+                                    <p>Transfert aéroport  Brest - Guipavas - Roscoff.</p>
+                                </div>
+                            </li>
+                            </div>
+                        </ul>
+                        <a href="javascript:void(0);" class="button-1" id="readMoreButton">Lire la suite </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <div class="line-vr-section"></div>
+    <!-- Services  -->
+    <section id="services" class="services2 section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mb-30">
+                    <div class="section-subtitle">Ce Que Nous Faisons</div>
+                    <div class="section-title">Nos <span>Services</span></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                <div class="owl-carousel owl-theme">
+                    <div class="item"> <img src="img/services/1.jpg" class="img-fluid" >
+                        <div class="bottom-fade"></div>
+                        <div class="title">
+                            <h4>Location de Voiture avec Chauffeur</h4>
+                        </div>
+                        <div class="curv-butn icon-bg">
+                            <a class="vid">
+                                <div class="icon">01</div>
+                            </a>
+                            <div class="br-left-top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                            <div class="br-right-bottom">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> <img src="img/services/2.jpg" class="img-fluid" >
+                        <div class="bottom-fade"></div>
+                        <div class="title">
+                            <h4>Transfert Aéroport</h4>
+                        </div>
+                        <div class="curv-butn icon-bg">
+                            <a class="vid">
+                                <div class="icon">02</div>
+                            </a>
+                            <div class="br-left-top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                            <div class="br-right-bottom">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> <img src="img/services/3.jpg" class="img-fluid" >
+                        <div class="bottom-fade"></div>
+                        <div class="title">
+                            <h4>Transfert gare</h4>
+                        </div>
+                        <div class="curv-butn icon-bg">
+                            <a class="vid">
+                                <div class="icon">03</div>
+                            </a>
+                            <div class="br-left-top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                            <div class="br-right-bottom">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item"> <img src="img/services/4.jpg" class="img-fluid" >
+                        <div class="bottom-fade"></div>
+                        <div class="title">
+                            <h4>Mise à disposition</h4>
+                        </div>
+                        <div class="curv-butn icon-bg">
+                            <a  class="vid">
+                                <div class="icon">04</div>
+                            </a>
+                            <div class="br-left-top">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                            <div class="br-right-bottom">
+                                <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                    <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- divider line -->
+      <div class="line-vr-section"></div>
+      <!-- Cars -->
+      <section id="cars" class="cars1 section-padding">
+          <div class="container">
+                  <div class="col-md-12 text-center ">
+                      <div class="section-subtitle">Sélectionnez Votre Voiture</div>
+                      <div class="section-title">Flotte de <span>Voitures de Luxe</span></div>
+                  </div>
+              <div class="cars1-carousel owl-theme owl-carousel">
+                  <div class="item">
+                      <div class="img"> <img src="img/cars/mercedes-v-class.png"  > </div>
+                      <div class="con opacity-1">
+                          <div class="row">
+                            <div class="col-md-7">
+                                <div class="title"><a >Mercedes</a></div>
+                                <div class="details"> 
+                                    <span><i class="omfi-door"></i> 7 Places</span> 
+                                    <span><i class="omfi-transmission"></i> Automatique</span> 
+                                    <span><i class="omfi-luggage"></i> 8 Bagages</span> 
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="img"> <img src="img/cars/skoda-enyaq-coupe-iv.jpg"  > </div>
+                      <div class="con opacity-1">
+                          <div class="row">
+                              <div class="col-md-7">
+                                  <div class="title"><a> Skoda </a></div>
+                                  <div class="details"> 
+                                    <span><i class="omfi-door"></i> 4 Places</span> 
+                                    <span><i class="omfi-transmission"></i> Automatique</span> 
+                                    <span><i class="omfi-luggage"></i> 4 Bagages</span> 
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="img"> <img src="img/cars/suzuki.jpg"  > </div>
+                      <div class="con opacity-1">
+                          <div class="row">
+                              <div class="col-md-7">
+                                  <div class="title"><a >Suzuki</a></div>
+                                  <div class="details"> 
+                                    <span><i class="omfi-door"></i> 4 Places</span> 
+                                    <span><i class="omfi-transmission"></i> Automatique</span> 
+                                    <span><i class="omfi-luggage"></i> 3 Bagages</span> 
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="item">
+                      <div class="img"> <img src="img/cars/toyota.jpg"   > </div>
+                      <div class="con opacity-1">
+                          <div class="row">
+                              <div class="col-md-7">
+                                  <div class="title"><a >Toyota</a></div>
+                                  <div class="details"> 
+                                    <span><i class="omfi-door"></i> 4 Places</span> 
+                                    <span><i class="omfi-transmission"></i> Automatique</span> 
+                                    <span><i class="omfi-luggage"></i> 4 Bagages</span> 
+                                </div>
+                              </div>
+                              </div>
+                          </div>
+                  </div>
+              </div>
+          </div>
+      </section>    
+      <section id ="reservation" class="lets-talk bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/3.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="section-title">Réserver votre trajet</div>
+                     <a href="https://wa.me/33620969861" class="button-1 mt-15 mb-15 mr-10"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a> <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#0" class="button-2 mt-15 mb-15">Réserver <span class="ti-arrow-top-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- divider line -->
+    <!--<div class="line-vr-section"></div>   -->
+    <!-- Contact -->
+        <div id="contact" class="contact-box mt-30">
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-12 text-center mt-90 mb-30">
+                            <div class="section-subtitle"> Restez en contact </div>
+                            <div class="section-title">Contactez <span> nous</span></div>
+                        </div>
+       
+                    <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item"> <span class="icon omfi-envelope"></span>
+                            <h5>Envoyez-nous un email</h5>
+                            <p>akvtckedim75@gmail.com</p> <i class="numb omfi-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item"> <span class="icon ti-time"></span>
+                            <h5>Horaires d'ouverture</h5>
+                            <p>24H/24</p> <i class="numb ti-time"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 animate-box" data-animate-effect="fadeInUp">
+                        <div class="item "> <span class="icon omfi-phone"></span>
+                            <h5>Appelez-nous</h5>
+                            <p>+33 6 20 96 98 61</p> <i class="numb omfi-phone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- Form -->
+                <div class="col-lg-6 col-md-12 mb-30">
+                    <div class="form-box" >
+                        <h5>Contactez-nous</h5>
+                        <form  id="contact-form" action="#" class="contact__form" > 
+                            <!-- message du formulaire -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="alert alert-success contact__msg" style="display: none" role="alert"> Votre message a été envoyé avec succès. </div>
+                                </div>
+                            </div>
+                            <!-- éléments du formulaire -->
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input id="name-contact" name="name" type="text" placeholder="Votre Nom *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input id="email-contact" name="email" type="email" placeholder="Votre Email *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input id="phone-contact" name="phone" type="text" placeholder="Votre Numéro *" required>
+                                </div>
+                                <div class="col-md-6 form-group">
+                                    <input id="subject-contact" name="subject" type="text" placeholder="Sujet *" required>
+                                </div>
+                                <div class="col-md-12 form-group">
+                                    <textarea id="message-contact" name="message"  cols="30" rows="4" placeholder="Message *" required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <input  id="submit-contact" name="submit" type="submit" value="Envoyer le Message">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+                 <!-- vide -->
+                <div class="col-lg-2  d-flex flex-column justify-content-end" >
+                <!-- reseaux sociaux  -->
+                <p>Suivez nos actualités et n’hésitez pas à nous joindre!</p>
+                <div class="social-icons text-end">
+                            <ul class="list-inline">
+                                <li><a ><i class="fa-brands fa-whatsapp"></i></a></li>
+                                <li><a ><i class="fa-brands fa-facebook-f"></i></a></li>
+                            </ul>
+                       </div>
+                </div> 
+            </div>
+        </div>
+    <!-- Footer -->
+    <footer class="footer clearfix">
+        <div class="container">
+            <!-- second footer -->
+            <div class="second-footer">
+            </div>
+            <!-- bottom footer -->
+            <div class="bottom-footer-text">
+                <div class="row copyright">
+                    <div class="col-md-12">
+                        <p class="mb-0">&copy;2024 AK VTC. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- reservation - from -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formulaire de Réservation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="booking-box">
+                        <div class="booking-inner clearfix">
+                            <form  id="reservation-form"  class="form1 contact__form clearfix" action="#">
+                                <!-- message du formulaire -->
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="alert alert-success contact__msg" style="display: none" role="alert"> Votre message a été envoyé avec succès. </div>
+                                    </div>
+                                </div>
+                                <!-- éléments du formulaire -->
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <input id="name-res" name="name" type="text" placeholder="Nom et Prénom *" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input id="email-res" name="email" type="email" placeholder="Email *" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input id="phone-res" name="phone" type="text" placeholder="Téléphone *" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="select1_wrapper">
+                                            <label>Le type de Voiture *</label>
+                                            <div class="select1_inner">
+                                                <select  class="select2 select" style="width: 100%" required>
+                                                    <option value=""  disabled selected >Le type de Voiture *</option>
+                                                    <option value="1"> Toyota Auris</option>
+                                                    <option value="2">Skoda Enyaq</option>
+                                                    <option value="3">Suzuki break</option>
+                                                    <option value="4">Mercedes class V </option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input id = "lieu-prise-res" name="Lieu" type="text" placeholder="Lieu de Prise en Charge *" required>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="input1_wrapper">
+                                            <label>Date</label>
+                                            <div class="input1_inner">
+                                                <input id="date-res" type="text" class="form-control input datepicker" placeholder="Date *" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="input1_wrapper">
+                                            <label>Heure</label>
+                                            <div class="input1_inner">
+                                                <input id="heure-res" type="text" class="form-control input " placeholder="Heure *" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <input id ="Lieu-dépot-res" name="Lieu_dépot" type="text" placeholder="Lieu de Dépôt*" required>
+                                    </div>    
+                
+                                    <div class="col-lg-12 col-md-12 form-group">
+                                        <textarea id="message-res"  name="message" cols="30" rows="4" placeholder="Note Supplémentaire"></textarea>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12">
+                                        <button id="submit-res" name="submit" type="submit" class="booking-button mt-15">Réserver</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/datepicker.js"></script>
+    <script src="js/YouTubePopUp.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/reservation.js"></script>
+
+
+    <!-- A refactor in JS FILE -->
+    <script>
+        // afficher plus d'éléments 
+        document.getElementById('readMoreButton').addEventListener('click', function() {
+            const additionalItems = document.querySelectorAll('.readMore');
+            additionalItems.forEach(item => {
+                item.style.display = 'block';
+            });
+            this.style.display = 'none'; 
+        });
+    </script>
+    <script>
+        // Fermer le menu après un clic sur un élément
+        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (window.innerWidth < 992) { // Vérifier si la fenêtre est en mode mobile
+                    new bootstrap.Collapse(navbarCollapse).toggle();
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function() {
+        $('#timepicker').timepicker({
+        timeFormat: 'HH:mm', // Use 'hh:mm tt' for 12-hour format with AM/PM
+        interval: 30, // Time intervals in minutes
+        minTime: '0', // Minimum time
+        maxTime: '23:00', // Maximum time
+        defaultTime: 'now', // Default time
+        startTime: '00:00', // Start time for the picker
+        dynamic: false, // Allow dynamic time selection
+        dropdown: true, // Show dropdown for time selection
+        scrollbar: true // Show scrollbar if needed
+    });
+});
+
+    </script>
+    <script>
+    function adjustImages() {
+    const images = document.querySelectorAll('.cars1 .item .img img');
+
+    images.forEach((img) => {
+        if (window.innerWidth >= 992) {
+            // Désactiver la classe 'img-fluid' pour les écrans larges et définir la hauteur
+            img.classList.remove('img-fluid');
+            img.style.height = '50vh';
+            img.style.width = '100%'; // Assurer que la largeur reste à 100% pour remplir le conteneur
+        } else {
+            // Ajouter la classe 'img-fluid' pour les petits écrans
+            img.classList.add('img-fluid');
+            img.style.height = 'auto'; // Réinitialiser la hauteur pour laisser 'img-fluid' contrôler
+        }
+    });
+}
+     window.addEventListener('load', adjustImages);
+     window.addEventListener('resize', adjustImages);
+    </script>
+
+</body>
+</html>
