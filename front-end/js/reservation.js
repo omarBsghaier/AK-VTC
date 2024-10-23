@@ -1,4 +1,3 @@
-// Sélectionner le formulaire et ajouter un écouteur d'événement pour l'envoi
 $('#exampleModal').on('shown.bs.modal', function () {
     const form = document.getElementById('reservation-form');
 
@@ -36,7 +35,11 @@ $('#exampleModal').on('shown.bs.modal', function () {
         }).then(
             message => {
                 if (message === 'OK') {
-                    document.querySelector('.contact__msg').innerText = 'Votre message a été envoyé avec succès.';
+                    const successMsg = document.getElementById('alert-success-reservation');
+                    successMsg.style.display = 'block';
+                    setTimeout(() => {
+                        successMsg.style.display = 'none';
+                    }, 2000);
                     form.reset();
                 } else {
                     alert('Erreur lors de l\'envoi de votre message : ' + message);

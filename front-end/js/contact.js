@@ -32,7 +32,11 @@ form.addEventListener('submit', (e) => {
     }).then(
         message => {
             if (message === 'OK') {
-                document.querySelector('.contact__msg').innerText = 'Votre message a été envoyé avec succès.';
+                const successMsg = document.getElementById('alert-success-contact');
+                successMsg.style.display = 'block';
+                setTimeout(() => {
+                    successMsg.style.display = 'none';
+                }, 2000);
                 form.reset();
             } else {
                 alert('Erreur lors de l\'envoi de votre message : ' + message);

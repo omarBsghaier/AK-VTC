@@ -459,11 +459,11 @@
                 <div class="col-lg-6 col-md-12 mb-30">
                     <div class="form-box" >
                         <h5>Contactez-nous</h5>
-                        <form  id="contact-form" action="" class="contact__form" >
+                        <form  id="contact-form"  class="contact__form" >
                             <!-- message du formulaire -->
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="alert alert-success contact__msg" style="display: none" role="alert"> Votre message a été envoyé avec succès. </div>
+                                    <div id="alert-success-contact" class="alert alert-success" style="display: none" > Votre message a été envoyé avec succès. </div>
                                 </div>
                             </div>
                             <!-- éléments du formulaire -->
@@ -531,11 +531,11 @@
                 <div class="modal-body">
                     <div class="booking-box">
                         <div class="booking-inner clearfix">
-                            <form  id="reservation-form"  class="form1 contact__form clearfix" action="">
+                            <form  id="reservation-form"  class="form1 contact__form clearfix" >
                                 <!-- message du formulaire -->
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="alert alert-success contact__msg" style="display: none" role="alert"> Votre message a été envoyé avec succès. </div>
+                                        <div id="alert-success-reservation" class="alert alert-success" style="display: none" > Votre message a été envoyé avec succès. </div>
                                     </div>
                                 </div>
                                 <!-- éléments du formulaire -->
@@ -553,12 +553,12 @@
                                         <div class="select1_wrapper">
                                             <label>Le type de Voiture *</label>
                                             <div class="select1_inner">
-                                                <select  class="select2 select" style="width: 100%" required>
+                                                <select id="type_voiture-res" class="select2 select" style="width: 100%" required>
                                                     <option value=""  disabled selected >Le type de Voiture *</option>
-                                                    <option value="1"> Toyota Auris</option>
-                                                    <option value="2">Skoda Enyaq</option>
-                                                    <option value="3">Suzuki break</option>
-                                                    <option value="4">Mercedes class V </option>
+                                                    <option value="Toyota Auris"> Toyota Auris</option>
+                                                    <option value="Skoda Enyaq">Skoda Enyaq</option>
+                                                    <option value="Suzuki break">Suzuki break</option>
+                                                    <option value="Mercedes class V">Mercedes class V</option>
                                                 </select>
                                             </div>
                                         </div>
