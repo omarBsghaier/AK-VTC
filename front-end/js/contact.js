@@ -22,20 +22,18 @@ form.addEventListener('submit', (e) => {
         <p>${message}</p>
     `;
 
-    // Envoyer l'email avec SMTP.js
     Email.send({
-        SecureToken: "F57671126044A25B55950965357EF2D0E128",
-        To: "omarbensghaier0@gmail.com", // Remplace par l'adresse de destination
-        ReplyTo: email, // L'adresse email de l'utilisateur pour qu'on puisse répondre directement à lui
-        From: "omarbensghaier0@gmail.com", 
+        SecureToken: "49a4c2c7-029d-4105-b671-27298e474e42",
+        To: "akvtckedim75@gmail.com",
+        ReplyTo: email,
+        From: "booking@ak-vtc.com",
         Subject: `Message de Contact: ${subject}`,
         Body: ebody
     }).then(
         message => {
             if (message === 'OK') {
-                document.querySelector('.contact__msg').style.display = 'block';
                 document.querySelector('.contact__msg').innerText = 'Votre message a été envoyé avec succès.';
-                form.reset(); // Réinitialiser le formulaire après l'envoi
+                form.reset();
             } else {
                 alert('Erreur lors de l\'envoi de votre message : ' + message);
             }

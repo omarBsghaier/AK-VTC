@@ -5,7 +5,6 @@ $('#exampleModal').on('shown.bs.modal', function () {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
     
-        // Récupérer les valeurs des champs du formulaire
         const name = document.getElementById('name-res').value;
         const email = document.getElementById('email-res').value;
         const phone = document.getElementById('phone-res').value;
@@ -15,7 +14,6 @@ $('#exampleModal').on('shown.bs.modal', function () {
         const lieuDepot = document.getElementById('Lieu-dépot-res').value;
         const message = document.getElementById('message-res').value;
     
-        // Construire le corps de l'email
         let ebody = `
             <h1>Nouvelle Réservation</h1>
             <p><strong>Nom et Prénom:</strong> ${name}</p>
@@ -28,21 +26,18 @@ $('#exampleModal').on('shown.bs.modal', function () {
             <p><strong>Note Supplémentaire:</strong> ${message}</p>
         `;
     
-        // Envoyer l'email avec SMTP.js
         Email.send({
-            SecureToken: "F57671126044A25B55950965357EF2D0E128",
-            To: "omarbensghaier0@gmail.com", // Remplace par l'adresse de destination
-            ReplyTo: email, // L'adresse email de l'utilisateur pour qu'on puisse répondre directement à lui
-            From: "omarbensghaier0@gmail.com", 
+            SecureToken: "49a4c2c7-029d-4105-b671-27298e474e42",
+            To: "akvtckedim75@gmail.com",
+            ReplyTo: email,
+            From: "booking@ak-vtc.com",
             Subject: `Nouvelle réservation de ${name}`,
             Body: ebody
         }).then(
             message => {
                 if (message === 'OK') {
-                    // Afficher un message de succès
-                    document.querySelector('.contact__msg').style.display = 'block';
                     document.querySelector('.contact__msg').innerText = 'Votre message a été envoyé avec succès.';
-                    form.reset(); // Réinitialiser le formulaire après l'envoi
+                    form.reset();
                 } else {
                     alert('Erreur lors de l\'envoi de votre message : ' + message);
                 }
