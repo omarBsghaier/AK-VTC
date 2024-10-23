@@ -24,7 +24,7 @@ $('#exampleModal').on('shown.bs.modal', function () {
             <p><strong>Lieu de Dépôt:</strong> ${lieuDepot}</p>
             <p><strong>Note Supplémentaire:</strong> ${message}</p>
         `;
-    
+
         Email.send({
             SecureToken: "49a4c2c7-029d-4105-b671-27298e474e42",
             To: "akvtckedim75@gmail.com",
@@ -39,13 +39,13 @@ $('#exampleModal').on('shown.bs.modal', function () {
                     successMsg.style.display = 'block';
                     setTimeout(() => {
                         successMsg.style.display = 'none';
+                        $('#exampleModal').modal('hide');
                     }, 2000);
-                    form.reset();
+                    form.find('input:not([type="submit"]), textarea').val('');
                 } else {
                     alert('Erreur lors de l\'envoi de votre message : ' + message);
                 }
             }
         );
     });
-    
 });
