@@ -19,6 +19,6 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: /home/omar/Bureau/AK-VTC/front-end/
+          local-dir:  front-end/
           server-dir: /www/
           port: 21 
