@@ -35,6 +35,7 @@
             "url": "https://votre-site.com"
         }
     </script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JMS23STDT"></script>
     <script>
@@ -680,7 +681,6 @@
         scrollbar: true // Show scrollbar if needed
     });
 });
-
     </script>
     <script>
     function adjustImages() {
@@ -700,6 +700,17 @@
 }
      window.addEventListener('load', adjustImages);
      window.addEventListener('resize', adjustImages);
+    </script>
+    <!-- google anl -->
+
+    <script>
+        document.getElementById('submit-res').addEventListener('click', function() {
+            gtag('event', 'button_contact_click', {
+                'event_category': 'Button',
+                'event_label': 'contact ',
+                'value': 1
+            });
+        });
     </script>
 
 </body>
