@@ -25,24 +25,22 @@
             "name": "Chauffeur Privé Brest",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "123 Rue de Brest",
+                "streetAddress": "6 rue porstrein",
                 "addressLocality": "Brest",
                 "addressRegion": "Bretagne",
                 "postalCode": "29200",
                 "addressCountry": "FR"
             },
-            "telephone": "+33 1 23 45 67 89",
-            "url": "https://votre-site.com"
+            "telephone": "+33 6 20 96 98 61",
+            "url": "https://ak-vtc.com/"
         }
     </script>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JMS23STDT"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-0JMS23STDT');
     </script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -105,7 +103,7 @@
                                     <h6>* Premium</h6>
                                     <h1>Chauffeur privé</h1>
                                     <h5>Mercedes Classe V <span>7 <i> Places </i></span></h5>
-                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15 ">Appeler <span class="flaticon-phone-call"></span></a>
+                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15 appeler-button">Appeler <span class="flaticon-phone-call"></span></a>
                                     <a href="#reservation" class="button-2 mt-15 mb-15">Réserver maintenant <span class="ti-arrow-top-right"></span></a>
                                 </div>
                             </div>
@@ -122,7 +120,7 @@
                                     <h6>* Économique</h6>
                                     <h1>Chauffeur privé</h1>
                                     <h5>Skoda Enyaq électrique <span>4 <i> Places</i></span></h5>
-                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15 ">Appeler <span class="flaticon-phone-call"></span></a>
+                                    <a href="tel:+33620969861" class="button-1 mt-15 mb-15  appeler-button">Appeler <span class="flaticon-phone-call"></span></a>
                                     <a href="#" data-scroll-nav="1" class="button-2 mt-15 mb-15">Réserver maintenant <span class="ti-arrow-top-right"></span></a>
                                 </div>
                             </div>
@@ -712,6 +710,17 @@
             });
         });
     </script>
+    <script>
+        // Select the button and add a click event listener
+        document.querySelector('.appeler-button').addEventListener('click', function() {
+            gtag('event', 'click_phone_number', {
+                'event_category': 'Button',
+                'event_label': 'Appeler Chauffeur',
+                'value': 1
+            });
+        });
+    </script>
+
 
 </body>
 </html>
