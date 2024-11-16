@@ -49,12 +49,12 @@ $(function () {
         onPageChange: null, // function(pageIndex) that is called when page is changed
         topOffset: -70 // offste (in px) for fixed top navigation
     });
-    
+
     // Preloader
     $("#preloader").fadeOut(500);
     $(".preloader-bg").delay(500).fadeOut(500);
     var wind = $(window);
-    
+
     // Navbar scrolling background
     wind.on("scroll", function () {
         var bodyScroll = wind.scrollTop(),
@@ -68,12 +68,12 @@ $(function () {
             logo.attr('src', 'img/ak-logo.png');
         }
     });
-   
+
     // Close navbar-collapse when a clicked
     $(".navbar-nav .dropdown-item a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
     });
-    
+
     // Close mobile menu "on click"
     $(function () {
         var navMain = $(".scroll-init");
@@ -81,7 +81,7 @@ $(function () {
             navMain.collapse('hide');
         });
     });
-    
+
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
     pageSection.each(function (indx) {
@@ -89,7 +89,7 @@ $(function () {
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-    
+
     // Slider  
     $(document).ready(function () {
         var owl = $('.header .owl-carousel');
@@ -147,7 +147,7 @@ $(function () {
             $('.owl-item').not('.cloned').eq(item).find('.button-2').addClass('animated fadeInUp');
         });
     });
-    
+
     // Team owlCarousel
     $('.team .owl-carousel').owlCarousel({
         loop: true,
@@ -172,7 +172,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Services 1 owlCarousel 
     $('.services1 .owl-carousel').owlCarousel({
         loop: true,
@@ -196,7 +196,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Services 2 owlCarousel 
     $('.services2 .owl-carousel').owlCarousel({
         loop: true,
@@ -220,7 +220,7 @@ $(function () {
             }
         }
     });
-    
+
     // Car Type 1 owlCarousel
     $('.car-types1 .owl-carousel').owlCarousel({
         loop: true,
@@ -245,7 +245,7 @@ $(function () {
             }
         }
     });
-    
+
     // Car Type 2 owlCarousel
     $('.car-types2 .owl-carousel').owlCarousel({
         loop: true,
@@ -270,7 +270,7 @@ $(function () {
             }
         }
     });
-    
+
     // Car Type 3 owlCarousel
     $('.car-types3 .owl-carousel').owlCarousel({
         loop: true,
@@ -295,7 +295,7 @@ $(function () {
             }
         }
     });
-    
+
     // Car Type 4 owlCarousel
     $('.car-types4 .owl-carousel').owlCarousel({
         loop: true,
@@ -320,7 +320,7 @@ $(function () {
             }
         }
     });
-    
+
     // Testimonials owlCarousel
     $('.testimonials .owl-carousel').owlCarousel({
         loop: true,
@@ -344,7 +344,7 @@ $(function () {
             }
         }
     });
-    
+
     // Cars 1 owlCarousel
     $(".cars1-carousel").owlCarousel({
         loop: true,
@@ -370,7 +370,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Cars 2 owlCarousel 
     $('.cars2 .owl-carousel').owlCarousel({
         loop: true,
@@ -394,7 +394,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Cars 3 owlCarousel 
     $('.cars3 .owl-carousel').owlCarousel({
         loop: true,
@@ -418,7 +418,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Blog 1 owlCarousel 
     $('.blog1 .owl-carousel').owlCarousel({
         loop: true,
@@ -442,7 +442,7 @@ $(function () {
             }
         }
     });
-    
+
     //  Blog 2 owlCarousel 
     $('.blog2 .owl-carousel').owlCarousel({
         loop: true,
@@ -466,7 +466,7 @@ $(function () {
             }
         }
     });
-    
+
     // Clients owlCarousel
     $('.clients .owl-carousel').owlCarousel({
         loop: true,
@@ -491,7 +491,7 @@ $(function () {
             }
         }
     });
-    
+
     // MagnificPopup
     $(".img-zoom").magnificPopup({
         type: "image",
@@ -511,7 +511,7 @@ $(function () {
         preloader: false,
         fixedContentPos: false
     });
-    
+
     // Accordion
     if ($(".accordion-box").length) {
         $(".accordion-box").on("click", ".acc-btn", function () {
@@ -532,7 +532,7 @@ $(function () {
             }
         });
     }
-    
+
     // Isotope Active Masonry Gallery
     $('.gallery-items').imagesLoaded(function () {
         // Add isotope on click filter function
@@ -555,7 +555,7 @@ $(function () {
             layoutMode: 'masonry',
         });
     });
-    
+
     // Animations
     var contentWayPoint = function () {
         var i = 0;
@@ -589,21 +589,21 @@ $(function () {
     $(function () {
         contentWayPoint();
     });
-    
+
     // YouTubePopUp
     $("a.vid").YouTubePopUp();
-    
+
     // Select2
     $('.select2').select2({
         minimumResultsForSearch: Infinity
     });
-    
+
     // Datepicker
     $(".datepicker").datepicker({
         orientation: "top"
-        
+
     });
-    
+
     // Scroll back to top
     var progressPath = document.querySelector('.progress-wrap path');
     var pathLength = progressPath.getTotalLength();
@@ -636,7 +636,7 @@ $(function () {
         }, duration);
         return false;
     })
-    
+
     // Contact Form
     var form = $('.contact__form'),
         message = $('.contact__msg'),
@@ -652,6 +652,7 @@ $(function () {
         }, 2000);
         form.find('input:not([type="submit"]), textarea').val('');
     }
+
     // fail function
     function fail_func(data) {
         message.fadeIn().removeClass('alert-success').addClass('alert-success');
@@ -661,34 +662,94 @@ $(function () {
         }, 2000);
     }
 
-   /* form.submit(function (e) {
-        e.preventDefault();
-        form_data = $(this).serialize();
-        $.ajax({
-            type: 'POST',
-            url: form.attr('action'),
-            data: form_data
-        }).done(done_func).fail(fail_func);
-    });*/
+    /* form.submit(function (e) {
+         e.preventDefault();
+         form_data = $(this).serialize();
+         $.ajax({
+             type: 'POST',
+             url: form.attr('action'),
+             data: form_data
+         }).done(done_func).fail(fail_func);
+     });*/
 });
 
 
-   // Slider Grid Background
-    (function () {
-            var imageElements = document.querySelectorAll('.grid-img');
-            var itemElements = document.querySelectorAll('.grid-con');
-            if (itemElements.length) {
-              itemElements.forEach(function (item, index) {
-                item.addEventListener('mouseenter', function () {
-                  imageElements.forEach(function (image) {
+// Slider Grid Background
+(function () {
+    var imageElements = document.querySelectorAll('.grid-img');
+    var itemElements = document.querySelectorAll('.grid-con');
+    if (itemElements.length) {
+        itemElements.forEach(function (item, index) {
+            item.addEventListener('mouseenter', function () {
+                imageElements.forEach(function (image) {
                     image.classList.remove('grid-img-active');
-                  });
-                  itemElements.forEach(function (card) {
-                    card.classList.remove('grid-con-active');
-                  });
-                  item.classList.add('grid-con-active');
-                  imageElements[index].classList.add('grid-img-active');
                 });
-              });
-            }
-          })();
+                itemElements.forEach(function (card) {
+                    card.classList.remove('grid-con-active');
+                });
+                item.classList.add('grid-con-active');
+                imageElements[index].classList.add('grid-img-active');
+            });
+        });
+    }
+})();
+
+   document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (window.innerWidth < 992) { // Vérifier si la fenêtre est en mode mobile
+            new bootstrap.Collapse(navbarCollapse).toggle();
+        }
+    });
+   });
+    /// function button lire la suite
+    document.getElementById('readMoreButton').addEventListener('click', function () {
+    const additionalItems = document.querySelectorAll('.readMore');
+    additionalItems.forEach(item => {
+        item.style.display = 'block';
+    });
+    this.style.display = 'none';
+    });
+
+    /// autcomplete the localisation
+    const addressInput = document.getElementById('lieu-prise-res');
+    const suggestionsList = document.getElementById('suggestions');
+    const MIN_NUMBER_LETTER = 3
+    addressInput.addEventListener('input', async () => {
+    const query = addressInput.value;
+    if (query.length < MIN_NUMBER_LETTER) return;
+    try {
+    const response = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(query)}&format=json&addressdetails=1&limit=5`);
+    const results = await response.json();
+    // Vider les anciennes suggestions
+    suggestionsList.innerHTML = '';
+    results.forEach(result => {
+    const li = document.createElement('li');
+    li.textContent = result.display_name;
+    li.onclick = () => {
+    addressInput.value = result.display_name;
+    suggestionsList.innerHTML = ''; // Effacer les suggestions après sélection
+};
+    suggestionsList.appendChild(li);
+});
+} catch (error) {
+    console.error('Erreur lors de la requête Nominatim:', error);
+}
+});
+ /// rating & feedback
+const ratingBtn = document.getElementById("rating_btn");
+const post = document.querySelector(".post");
+const widget = document.querySelector(".star-widget");
+const editBtn = document.querySelector(".edit");
+ratingBtn.onclick = ()=>{
+    widget.style.display = "none";
+    post.style.display = "block";
+    editBtn.onclick = ()=>{
+        widget.style.display = "block";
+        post.style.display = "none";
+    }
+    return false;
+}
+
+
+

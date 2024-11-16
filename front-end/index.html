@@ -35,6 +35,15 @@
             "url": "https://ak-vtc.com/"
         }
     </script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-408768376">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-408768376');
+    </script>
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -265,6 +274,34 @@
                         </ul>
                         <a href="javascript:void(0);" class="button-1" id="readMoreButton">Lire la suite </a>
                     </div>
+                </div>
+                <div class=" rating col-lg-6 col-md-12 mb-30">
+                    <div class="section-title"> Notes <span> et Feedback </span> </div>
+                    <div class="post">
+                            <div class="text">Merci pour votre évaluation !</div>
+                            <div class="edit">Modifier</div>
+                    </div>
+                        <div class="star-widget">
+                            <input type="radio" name="rate" id="rate-5">
+                            <label for="rate-5" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-4">
+                            <label for="rate-4" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-3">
+                            <label for="rate-3" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-2">
+                            <label for="rate-2" class="fas fa-star"></label>
+                            <input type="radio" name="rate" id="rate-1">
+                            <label for="rate-1" class="fas fa-star"></label>
+                            <form action="#">
+                                <header class="rating-message"></header>
+                                <div class="textarea">
+                                    <textarea cols="30" placeholder="Décrivez votre expérience..."></textarea>
+                                </div>
+                                <div class="rating-btn">
+                                    <button id="rating_btn" class="button-1"  type="submit">Post</button>
+                                </div>
+                            </form>
+                        </div>
                 </div>
             </div>
         </div>
@@ -605,22 +642,15 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <input id = "lieu-prise-res" name="Lieu" type="text" placeholder="Lieu de Prise en Charge *" required>
+                                        <ul id="suggestions" class="select2 select"></ul>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="input1_wrapper">
                                             <label>Date</label>
-                                            <div class="input1_inner">
-                                                <input id="date-res" type="text" class="form-control input datepicker" placeholder="Date *" required>
-                                            </div>
-                                        </div>
+                                                <input id="date-res" type="date"  class="custom-date-picker" placeholder="Date *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <div class="input1_wrapper">
                                             <label>Heure</label>
-                                            <div class="input1_inner">
-                                                <input id="heure-res" type="text" class="form-control input " placeholder="Heure *" required>
-                                            </div>
-                                        </div>
+                                                <input id="heure-res" type="time"  placeholder="Heure *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <input id ="Lieu-dépot-res" name="Lieu_dépot" type="text" placeholder="Lieu de Dépôt*" required>
@@ -658,61 +688,5 @@
     <script src="js/custom.js"></script>
     <script src="js/contact.js"></script>
     <script src="js/reservation.js"></script>
-    <!-- A refactor in JS FILE -->
-    <script>
-        // afficher plus d'éléments 
-        document.getElementById('readMoreButton').addEventListener('click', function() {
-            const additionalItems = document.querySelectorAll('.readMore');
-            additionalItems.forEach(item => {
-                item.style.display = 'block';
-            });
-            this.style.display = 'none'; 
-        });
-    </script>
-    <script>
-        // Fermer le menu après un clic sur un élément
-        document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const navbarCollapse = document.querySelector('.navbar-collapse');
-                if (window.innerWidth < 992) { // Vérifier si la fenêtre est en mode mobile
-                    new bootstrap.Collapse(navbarCollapse).toggle();
-                }
-            });
-        });
-    </script>
-    <script>
-        $(document).ready(function() {
-        $('#timepicker').timepicker({
-        timeFormat: 'HH:mm', // Use 'hh:mm tt' for 12-hour format with AM/PM
-        interval: 30,
-        minTime: '0',
-        maxTime: '23:00', // Maximum time
-        defaultTime: 'now', // Default time
-        startTime: '00:00', // Start time for the picker
-        dynamic: false, // Allow dynamic time selection
-        dropdown: true, // Show dropdown for time selection
-        scrollbar: true // Show scrollbar if needed
-    });
-});
-    </script>
-    <script>
-    function adjustImages() {
-    const images = document.querySelectorAll('.cars1 .item .img img');
-    images.forEach((img) => {
-        if (window.innerWidth >= 992) {
-            // Désactiver la classe 'img-fluid' pour les écrans larges et définir la hauteur
-            img.classList.remove('img-fluid');
-            img.style.height = '50vh';
-            img.style.width = '100%'; // Assurer que la largeur reste à 100% pour remplir le conteneur
-        } else {
-            // Ajouter la classe 'img-fluid' pour les petits écrans
-            img.classList.add('img-fluid');
-            img.style.height = 'auto'; // Réinitialiser la hauteur pour laisser 'img-fluid' contrôler
-        }
-    });
-}
-     window.addEventListener('load', adjustImages);
-     window.addEventListener('resize', adjustImages);
-    </script>
 </body>
 </html>
