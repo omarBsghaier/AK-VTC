@@ -7148,10 +7148,10 @@ height: 100% !important;
 /* ======= Rating style ======= */
 .rating{
     position: relative;
-    width:380px;
+    width:360px;
+    margin: 0 auto;
     max-height: 400px;
     padding: 20px 10px ;
-    margin: 20px 30px;
     border: 1px solid #444;
     border-radius: 5px;
     display: flex;
