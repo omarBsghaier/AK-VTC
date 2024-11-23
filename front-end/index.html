@@ -294,7 +294,9 @@
                             <form action="#">
                                 <header class="rating-message"></header>
                                 <div class="textarea">
-                                    <textarea cols="30" placeholder="Décrivez votre expérience..."></textarea>
+                                    <label>
+                                        <textarea cols="30" placeholder="Décrivez votre expérience..."></textarea>
+                                    </label>
                                 </div>
                                 <div class="rating-btn">
                                     <button id="rating_btn" class="button-1"  type="submit">Envoyer</button>
@@ -319,7 +321,7 @@
             <div class="row">
                 <div class="col-md-12">
                 <div class="owl-carousel owl-theme">
-                    <div class="item"> <img src="img/services/1.jpg" class="img-fluid" >
+                    <div class="item"> <img src="img/services/1.jpg" class="img-fluid"  alt="Location de voiture avec chauffeur">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4>Location de Voiture avec Chauffeur</h4>
@@ -340,7 +342,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/2.jpg" class="img-fluid" >
+                    <div class="item"> <img src="img/services/2.jpg" class="img-fluid"  alt="transfert aéroport">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4>Transfert Aéroport</h4>
@@ -361,7 +363,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/3.jpg" class="img-fluid" >
+                    <div class="item"> <img src="img/services/3.jpg" class="img-fluid"  alt="transfert gare">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4>Transfert gare</h4>
@@ -382,7 +384,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item"> <img src="img/services/4.jpg" class="img-fluid" >
+                    <div class="item"> <img src="img/services/4.jpg" class="img-fluid"  alt="Mise à disposition">
                         <div class="bottom-fade"></div>
                         <div class="title">
                             <h4>Mise à disposition</h4>
@@ -419,7 +421,7 @@
                   </div>
               <div class="cars1-carousel owl-theme owl-carousel">
                   <div class="item">
-                      <div class="img"> <img src="img/cars/mercedes-v-class.png"  > </div>
+                      <div class="img"> <img src="img/cars/mercedes-v-class.png"   alt="mercedes"> </div>
                       <div class="con opacity-1">
                           <div class="row">
                             <div class="col-md-7">
@@ -434,7 +436,7 @@
                       </div>
                   </div>
                   <div class="item">
-                      <div class="img"> <img src="img/cars/skoda-enyaq-coupe-iv.jpg"  > </div>
+                      <div class="img"> <img src="img/cars/skoda-enyaq-coupe-iv.jpg"   alt="skoda"> </div>
                       <div class="con opacity-1">
                           <div class="row">
                               <div class="col-md-7">
@@ -449,7 +451,7 @@
                       </div>
                   </div>
                   <div class="item">
-                      <div class="img"> <img src="img/cars/suzuki.jpg"  > </div>
+                      <div class="img"> <img src="img/cars/suzuki.jpg"   alt="suzuki"> </div>
                       <div class="con opacity-1">
                           <div class="row">
                               <div class="col-md-7">
@@ -464,7 +466,7 @@
                       </div>
                   </div>
                   <div class="item">
-                      <div class="img"> <img src="img/cars/toyota.jpg"   > </div>
+                      <div class="img"> <img src="img/cars/toyota.jpg"  alt="toyota" > </div>
                       <div class="con opacity-1">
                           <div class="row">
                               <div class="col-md-7">
@@ -487,7 +489,7 @@
                 <div class="col-md-12 text-center">
                     <div class="section-title">Réserver votre trajet</div>
                      <a href="https://wa.me/33620969861" class="button-1 mt-15 mb-15 mr-10 track-click"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-                     <a id="reserver-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#0" class="button-2 mt-15 mb-15">Réserver <span class="ti-arrow-top-right"></span></a>
+                     <a id="reserver-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#" class="button-2 mt-15 mb-15">Réserver <span class="ti-arrow-top-right"></span></a>
                 </div>
             </div>
         </div>
@@ -545,19 +547,19 @@
                             <!-- éléments du formulaire -->
                             <div class="row">
                                 <div class="col-md-6 form-group">
-                                    <input id="name-contact" name="name" type="text" placeholder="Votre Nom *" required>
+                                    <label for="name-contact"></label><input id="name-contact" name="name" type="text" placeholder="Votre Nom *" required>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input id="email-contact" name="email" type="email" placeholder="Votre Email *" required>
+                                    <label for="email-contact"></label><input id="email-contact" name="email" type="email" placeholder="Votre Email *" required>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input id="phone-contact" name="phone" type="text" placeholder="Votre Numéro *" required>
+                                    <label for="phone-contact"></label><input id="phone-contact" name="phone" type="text" placeholder="Votre Numéro *" required>
                                 </div>
                                 <div class="col-md-6 form-group">
-                                    <input id="subject-contact" name="subject" type="text" placeholder="Sujet *" required>
+                                    <label for="subject-contact"></label><input id="subject-contact" name="subject" type="text" placeholder="Sujet *" required>
                                 </div>
                                 <div class="col-md-12 form-group">
-                                    <textarea id="message-contact" name="message"  cols="30" rows="4" placeholder="Message *" required></textarea>
+                                    <label for="message-contact"></label><textarea id="message-contact" name="message" cols="30" rows="4" placeholder="Message *" required></textarea>
                                 </div>
                                 <div class="col-md-12">
                                     <input  id="submit-contact" name="submit" type="submit" >
@@ -617,18 +619,19 @@
                                 <!-- éléments du formulaire -->
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
-                                        <input id="name-res" name="name" type="text" placeholder="Nom et Prénom *" required>
+                                        <label for="name-res"></label><input id="name-res" name="name" type="text" placeholder="Nom et Prénom *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <input id="email-res" name="email" type="email" placeholder="Email *" required>
+                                        <label for="email-res"></label><input id="email-res" name="email" type="email" placeholder="Email *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <input id="phone-res" name="phone" type="text" placeholder="Téléphone *" required>
+                                        <label for="phone-res"></label><input id="phone-res" name="phone" type="text" placeholder="Téléphone *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <div class="select1_wrapper">
                                             <label>Le type de Voiture *</label>
                                             <div class="select1_inner">
+                                                <label for="type_voiture-res"></label>
                                                 <select id="type_voiture-res" class="select2 select" style="width: 100%" required>
                                                     <option value=""  disabled selected >Le type de Voiture *</option>
                                                     <option value="Toyota Auris"> Toyota Auris</option>
@@ -640,22 +643,22 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <input id = "lieu-prise-res" name="Lieu" type="text" placeholder="Lieu de Prise en Charge *" required>
+                                        <label for="lieu-prise-res"></label><input id = "lieu-prise-res" name="Lieu" type="text" placeholder="Lieu de Prise en Charge *" required>
                                         <ul id="suggestions" class="select2 select"></ul>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                            <label>Date</label>
+                                            <label for="date-res">Date</label>
                                                 <input id="date-res" type="date"  class="custom-date-picker" placeholder="Date *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                            <label>Heure</label>
+                                            <label for="heure-res">Heure</label>
                                                 <input id="heure-res" type="time"  placeholder="Heure *" required>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <input id ="Lieu-dépot-res" name="Lieu_dépot" type="text" placeholder="Lieu de Dépôt*" required>
+                                        <label for="Lieu-dépot-res"></label><input id ="Lieu-dépot-res" name="Lieu_dépot" type="text" placeholder="Lieu de Dépôt*" required>
                                     </div>
                                     <div class="col-lg-12 col-md-12 form-group">
-                                        <textarea id="message-res"  name="message" cols="30" rows="4" placeholder="Note Supplémentaire"></textarea>
+                                        <label for="message-res"></label><textarea id="message-res" name="message" cols="30" rows="4" placeholder="Note Supplémentaire"></textarea>
                                     </div>
                                     <div class="col-lg-12 col-md-12">
                                         <button id="submit-res" name="submit" type="submit" class="booking-button mt-15">Réserver</button>
